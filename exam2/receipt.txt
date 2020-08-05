@@ -1,0 +1,4 @@
+Receipt:
+apple: $3.5
+milk: $4.75
+Your total is $8.25, Thank you!

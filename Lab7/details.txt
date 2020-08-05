@@ -1,0 +1,13 @@
+The five most frequent words are:
+The - 48
+He - 33
+A - 32
+Of - 23
+And - 22
+
+The total number of words occurring an odd number of times: 289
+
+The total number of words occurring an even number of times: 103
+
+The total number of words: 392
+

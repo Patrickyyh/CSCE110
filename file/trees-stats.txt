@@ -1,0 +1,4 @@
+The count of Bald Cypress is 4
+The count of Chinese Parasol is 2
+The count of Soapberry is 2
+The count of Texas Ebony is 1

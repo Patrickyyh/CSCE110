@@ -1,0 +1,2 @@
+A quadratic equation is a second-order polynomial equation in a single variable x.
+The quadratic equation only contains powers of x that are non-negative integers, and therefore it is a polynomial equation.

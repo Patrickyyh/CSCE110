@@ -1,0 +1,827 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.8.4" />
+<title>drive_final API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>drive_final</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python"># displays the main menu
+import csv
+import matplotlib.pyplot as drawing
+import os
+import numpy as np
+import matplotlib.pyplot as plt
+&#34;&#34;&#34;
+Name : drive_final.py
+Date : 08/02/2020
+Author: QuanLin Yu
+        Yuhao Ye
+Email: yeyuhao1234@tamu.edu
+       quanlin2019@tamu.edu
+&#34;&#34;&#34;
+
+def display():
+    &#34;&#34;&#34;
+    Description : Display the Main Menu\n
+    &#34;&#34;&#34;
+    print(&#39;*******************Main Menu*****************&#39;)
+    print(&#39;1. Read CSV file of grades&#39;)
+    print(&#39;2. Generate student report files&#39;)
+    print(&#39;3. Generate student report charts&#39;)
+    print(&#39;4. Generate class report file&#39;)
+    print(&#39;5. Generate class report charts&#39;)
+    print(&#39;6. Quit&#39;)
+    print(&#39;************************************************&#39;)
+
+
+def read_csv():
+    &#34;&#34;&#34;
+    @ Author :Yuhao Ye\n
+    Description: This function read the file which at specfic location\n
+    return: a dictionary which store the scores of all students\n
+    &#34;&#34;&#34;
+    student_info = dict()
+    path = input(&#34;Enter the full path (absolute path ) of your csv file: &#34;)
+    try:
+        with open(path, &#39;r&#39;) as file:
+            csv_file = csv.DictReader(file)
+            for row in csv_file:
+                student_info[row[&#39;UIN&#39;]] = row
+        print(&#34;File reads successfully!&#34;)
+        print()
+        return student_info
+    except FileNotFoundError:
+        print(&#34;Sorry cannot find your file, please read again.&#34;)
+        print()
+
+
+
+def grade_calculation(student_info,UIN):
+    &#34;&#34;&#34;
+    @author Yuhao Ye\n
+    param student_info:\n
+    param UIN:\n
+    Description: calculate Exam mean , labs mean , quizzes mean , Reading mean , Score as percentage  and Lettergrade\n
+    return: student&#39;s final scores and grades\n
+    &#34;&#34;&#34;
+    student_final_grade = dict()
+
+    for uin, values in student_info.items():
+        if uin == UIN:
+            student_final_grade[&#39;Labs_mean&#39;]      = mean_calculation(&#39;lab&#39;, 6, values)
+            student_final_grade[&#39;Exams_mean&#39;]     = mean_calculation(&#39;exam&#39;, 3, values)
+            student_final_grade[&#39;Quizzes_mean&#39;]   = mean_calculation(&#39;quiz&#39;, 6, values)
+            student_final_grade[&#39;Reading_mean&#39;]   = mean_calculation(&#39;reading&#39;, 6, values)
+            student_final_grade[&#39;Project_grade&#39;]  = mean_calculation(&#39;project&#39;, 1, values)
+    Scores_percentage = student_final_grade[&#39;Labs_mean&#39;]  * 0.25 + student_final_grade[&#39;Exams_mean&#39;]* 0.45 + student_final_grade[&#39;Quizzes_mean&#39;]  * 0.1 +\
+                        student_final_grade[&#39;Reading_mean&#39;] * 0.1 + \
+                        student_final_grade[&#39;Project_grade&#39;] * 0.1
+    return Scores_percentage,student_final_grade
+
+
+
+def Generate_student_report(student_info):
+    &#34;&#34;&#34;
+    @ Author : Yuhao Ye\n
+    param student_info:\n
+    Description  Generate student report\n
+    return:\n
+    &#34;&#34;&#34;
+    while True:
+       UIN = input(&#34;Please enter the uin number: &#34;)
+       if len(UIN) != 10:
+          print(&#39;The UIN must be ten digits !&#39;)
+       elif  not UIN.isnumeric():
+          print(&#39;UIN must be all digits !&#39;)
+       elif UIN not in student_info:
+          print(&#39;The UIN you enter does not exits! &#39;)
+       else:
+           break
+
+    Scores_percentage, studetn_final_grades= grade_calculation(student_info,UIN)
+
+    if Scores_percentage &gt;= 90:
+        grade_lettter = &#39;A&#39;
+    elif Scores_percentage &gt;= 80 and Scores_percentage &lt; 90:
+        grade_lettter = &#39;B&#39;
+    elif Scores_percentage &gt;= 70 and Scores_percentage&lt; 80:
+        grade_lettter = &#34;C&#34;
+    elif Scores_percentage &gt;= 60 and Scores_percentage &lt; 70:
+        grade_lettter = &#34;D&#34;
+    else:
+        grade_lettter = &#34;F&#34;
+
+    &#34;&#34;&#34;Write the result into the UIN.txt&#34;&#34;&#34;
+    File_name = UIN+&#39;.txt&#39;
+    with open(File_name,&#39;w&#39;) as write:
+        write.write(f&#39;Exams mean: {round(studetn_final_grades[&#34;Exams_mean&#34;],2)}\n&#39;)
+        write.write(f&#39;Labs mean: {round(studetn_final_grades[&#34;Labs_mean&#34;],2)}\n&#39;)
+        write.write(f&#39;Quizzes mean: {round(studetn_final_grades[&#34;Quizzes_mean&#34;],2)}\n&#39;)
+        write.write(f&#39;Reading activities mean: {round(studetn_final_grades[&#34;Reading_mean&#34;],2)}\n&#39;)
+        write.write(f&#39;Score: {round(Scores_percentage,2)}%\n&#39;)
+        write.write(f&#39;Letter grad: {grade_lettter}\n&#39;)
+
+    print(&#39;The student report has been created successfully , you will see it after quiting &#39;)
+    print()
+
+
+def mean_calculation(object_type, amount,info_dict):
+    &#34;&#34;&#34;
+    Author Yuhao Ye\n
+    param object_type: type of grade (eg,Lab, quizz , exam ,project...)\n
+    param amount: (eg, if there is 6 lab in total , the amount = 6)\n
+    param info_dict:\n
+    return: mean_value\n
+    &#34;&#34;&#34;
+    total_scores = 0
+    mean_value = 0
+    # since there is only one project, hence return project grade instantly
+    if object_type == &#34;project&#34;:
+       return  float(info_dict[&#39;project&#39;])
+
+    else:
+       for number in range(1, amount + 1 ):
+          type_name = object_type
+          type_name = type_name + &#34; &#34;  + str(number)
+          total_scores = total_scores + float(info_dict[type_name])
+       mean_value = total_scores / amount
+       return mean_value
+
+
+def generate_student_chart(student_info):
+    &#34;&#34;&#34;
+    @Author : YuHao Ye\n
+    param student_info:\n
+    Description : Generate report charts for student.\n
+    return:\n
+    &#34;&#34;&#34;
+    FIGURE1 = 1
+    FIGURE2 = 2
+    FIGURE3 = 3
+    FIGURE4 = 4
+    current_path = os.getcwd()
+    while True:
+        UIN_Number = input(&#34;Please enter the uin number: &#34;)
+        if len(UIN_Number ) != 10:
+            print(&#39;The UIN must be ten digits !&#39;)
+        elif not UIN_Number .isnumeric():
+            print(&#39;UIN must be all digits !&#39;)
+        elif UIN_Number  not in student_info:
+            print(&#39;The UIN you enter does not exits! &#39;)
+        else:
+            break
+
+    new_path = current_path+f&#39;\{UIN_Number}&#39;
+
+    if not os.path.exists(new_path):
+        os.mkdir(new_path)
+    os.chdir(new_path)
+
+    #bar charts for exam
+    student_grades = student_info.get(UIN_Number)
+    exam_grade = list()
+    for i in range(1, 4):
+        target = &#39;exam &#39; + str(i)
+        exam_grade.append(float(student_grades.get(target)))
+    drawing.figure(FIGURE1)
+    x_value = [1 , 2 , 3]
+    drawing.title(f&#39;Exam grade for {UIN_Number}&#39;,size = 20)
+    drawing.xlabel(&#34;Exam&#34;,size =&#39;15&#39; , color = &#39;red&#39;)
+    drawing.ylabel(&#34;Scores %&#34;,size = &#39;15&#39;, color = &#39;red&#39;)
+    drawing.yticks(range(0,100,10))
+    drawing.bar(x_value,exam_grade)
+    x_mark = 1
+    for grade in exam_grade:
+      drawing.text(x_mark-0.05,grade+0.5,grade,size = &#34;10&#34;)
+      x_mark+=1
+    drawing.savefig(&#34;exams_chart.png&#34;)
+
+
+#bar chart for lab
+    drawing.figure(FIGURE2)
+    lab_grade = list()
+    for i in range(1,7):
+        target = &#39;lab &#39; + str(i)
+        lab_grade.append(float(student_grades.get(target)))
+    x_value = [1,2,3,4,5,6]
+    drawing.title(f&#39;Lab grade for {UIN_Number}&#39;,size = 20)
+    drawing.xlabel(&#39;Lab&#39; , size = &#39;15&#39;,color = &#39;red&#39;)
+    drawing.ylabel(&#34;Scores %&#34;,size = &#39;15&#39;, color = &#39;red&#39;)
+    drawing.yticks(range(0, 120, 10))
+    drawing.bar(x_value, lab_grade)
+    x_mark =1
+    for grade in lab_grade:
+        drawing.text(x_mark - 0.07, grade + 0.5, grade, size=&#34;10&#34;)
+        x_mark += 1
+    drawing.savefig(&#34;lab_chars.png&#34;)
+
+# bar chart for quiz
+    drawing.figure(FIGURE3)
+    quiz_grade = list()
+    for i in range(1, 7):
+        target = &#39;quiz &#39; + str(i)
+        quiz_grade.append(float(student_grades.get(target)))
+    x_value = [1, 2, 3, 4, 5, 6]
+    drawing.title(f&#39;Quiz grade for {UIN_Number}&#39;, size=20)
+    drawing.xlabel(&#39;Quiz&#39;, size=&#39;15&#39;, color=&#39;red&#39;)
+    drawing.ylabel(&#34;Scores %&#34;, size=&#39;15&#39;, color=&#39;red&#39;)
+    drawing.yticks(range(0, 120, 10))
+    drawing.bar(x_value, quiz_grade)
+    x_mark = 1
+    for grade in quiz_grade:
+        drawing.text(x_mark - 0.2, grade + 0.5, grade, size=&#34;10&#34;)
+        x_mark += 1
+    drawing.savefig(&#34;quiz_chars.png&#34;)
+
+# bar chart for reading activities
+    drawing.figure(FIGURE4)
+    reading_grade = list()
+    for i in range(1, 7):
+        target = &#39;reading &#39; + str(i)
+        reading_grade.append(float(student_grades.get(target)))
+    x_value = [1, 2, 3, 4, 5, 6]
+    drawing.title(f&#39;Reading activities grade for {UIN_Number}&#39;, size=10)
+    drawing.xlabel(&#39;Reading activities&#39;, size=&#39;15&#39;, color=&#39;red&#39;)
+    drawing.ylabel(&#34;Scores %&#34;, size=&#39;15&#39;, color=&#39;red&#39;)
+    drawing.yticks(range(0, 120, 10))
+    drawing.bar(x_value, reading_grade)
+    x_mark = 1
+    for grade in reading_grade:
+        drawing.text(x_mark-0.2 , grade+0.5, grade, size=&#34;10&#34;)
+        x_mark += 1
+    drawing.savefig(&#34;reading_chars.png&#34;)
+    &#34;&#34;&#34;:returns back to the previous work directory &#34;&#34;&#34;
+    os.chdir(current_path)
+
+
+#part 2
+def generate_class_report(info):
+    &#39;&#39;&#39;
+    @Author : QuanLin Yu\n
+    param info: an ordered dictionary\n
+    description: This function count weighted grade for every student and calculate mean and others parameters based on it\n
+    return: None\n
+    &#39;&#39;&#39;
+    data=[0.15*float(info[i][&#39;exam 1&#39;])+0.15*float(info[i][&#39;exam 2&#39;])+0.15*float(info[i][&#39;exam 3&#39;])+0.25*np.mean(np.array([info[i][&#39;lab 1&#39;],info[i][&#39;lab 2&#39;],info[i][&#39;lab 3&#39;],info[i][&#39;lab 4&#39;],info[i][&#39;lab 5&#39;],info[i][&#39;lab 6&#39;]],dtype=np.float32))+0.1*np.mean(np.array([info[i][&#39;quiz 1&#39;],info[i][&#39;quiz 2&#39;],info[i][&#39;quiz 3&#39;],info[i][&#39;quiz 4&#39;],info[i][&#39;quiz 5&#39;],info[i][&#39;quiz 6&#39;]],dtype=np.float32))+0.1*np.mean(np.array([info[i][&#39;reading 1&#39;],info[i][&#39;reading 2&#39;],info[i][&#39;reading 3&#39;],info[i][&#39;reading 4&#39;],info[i][&#39;reading 5&#39;],info[i][&#39;reading 6&#39;]],dtype=np.float32))+0.1*float(info[i][&#39;project&#39;]) for i in info]
+    f=open(&#39;report.txt&#39;,&#39;w+&#39;)
+    f.write(&#39;Number of students:{0}\n&#39;.format(len(info)))
+    f.write(&#39;Minimum score:{0}\n&#39;.format(round(min(data),1)))
+    f.write(&#39;Maximum score:{0}\n&#39;.format(round(max(data),1)))
+    f.write(&#39;Median score:{0}\n&#39;.format(round(np.median(data),1)))
+    f.write(&#39;Mean score:{0}\n&#39;.format(round(np.mean(data),1)))
+    f.write(&#39;Standard deviation:{0}\n&#39;.format(round(np.std(data),1)))
+    f.close()
+
+def generate_class_chart(info):
+    &#39;&#39;&#39;
+    @Author : QuanLin Yu\n
+    param info: an ordered dictionary\n
+    description: This function count weighted grade for every student and plot pie chart and histogram chart based on it\n
+    return: None
+    &#39;&#39;&#39;
+    try:
+        os.mkdir(&#39;class_charts&#39;)
+    except FileExistsError:
+        pass
+    data=[0.15*float(info[i][&#39;exam 1&#39;])+0.15*float(info[i][&#39;exam 2&#39;])+0.15*float(info[i][&#39;exam 3&#39;])+0.25*np.mean(np.array([info[i][&#39;lab 1&#39;],info[i][&#39;lab 2&#39;],info[i][&#39;lab 3&#39;],info[i][&#39;lab 4&#39;],info[i][&#39;lab 5&#39;],info[i][&#39;lab 6&#39;]],dtype=np.float32))+0.1*np.mean(np.array([info[i][&#39;quiz 1&#39;],info[i][&#39;quiz 2&#39;],info[i][&#39;quiz 3&#39;],info[i][&#39;quiz 4&#39;],info[i][&#39;quiz 5&#39;],info[i][&#39;quiz 6&#39;]],dtype=np.float32))+0.1*np.mean(np.array([info[i][&#39;reading 1&#39;],info[i][&#39;reading 2&#39;],info[i][&#39;reading 3&#39;],info[i][&#39;reading 4&#39;],info[i][&#39;reading 5&#39;],info[i][&#39;reading 6&#39;]],dtype=np.float32))+0.1*float(info[i][&#39;project&#39;]) for i in info]
+    labels=[&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;D&#39;,&#39;F&#39;]
+    grade=dict.fromkeys(labels,0)
+    for i in data:
+        if 90&lt;=i&lt;=100:
+            grade[&#39;A&#39;]+=1
+        elif 80&lt;=i&lt;90:
+            grade[&#39;B&#39;]+=1
+        elif 70&lt;=i&lt;80:
+            grade[&#39;C&#39;]+=1
+        elif 60&lt;=i&lt;70:
+            grade[&#39;D&#39;]+=1
+        else:
+            grade[&#39;F&#39;]+=1
+    grade=[i[1] for i in sorted(grade.items(),key=lambda x:x[0])]
+    plt.pie(grade,labels=labels,autopct=&#39;%1.1f%%&#39;,shadow=False,startangle=150)
+    plt.title(&#34;class letter grades&#34;)
+    plt.savefig(&#34;class_charts//class letter grades(pie).png&#34;)
+    plt.clf()
+    p1 = plt.bar(range(len(labels)), height=grade, width=0.5, tick_label=labels)
+    for a, b in zip(range(len(labels)), grade):
+        plt.text(a, b + 0.05, &#39;%.0f&#39; % b, ha=&#39;center&#39;, va=&#39;bottom&#39;, fontsize=10)
+    plt.xlabel(&#34;Grades&#34;)
+    plt.ylabel(&#34;Count&#34;)
+    plt.title(&#34;class letter grades&#34;)
+    plt.savefig(&#34;class_charts//class letter grades(histogram).png&#34;)
+    
+    
+
+
+
+def main():
+    &#34;&#34;&#34;
+    @Author: QuanLin Yu\n
+    &#34;&#34;&#34;
+    student_info = dict() # this dict instore the information
+    display()
+    while True :
+        try:
+            options = int(input(&#34;Please enter an option (between 1-6  (Don&#39;t forget to read csv file at first! )): &#34;))
+        except ValueError:
+            break
+        if options == 6 :
+            break
+        else:
+          if options == 1:
+              student_info = read_csv()
+          elif options == 2:
+              Generate_student_report(student_info)
+          elif options ==3 :
+              generate_student_chart(student_info)
+          elif options == 4:
+              generate_class_report(student_info)
+          elif options == 5 :
+             generate_class_chart(student_info)
+        display()
+
+if __name__ == &#39;__main__&#39;:
+    main()</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="drive_final.Generate_student_report"><code class="name flex">
+<span>def <span class="ident">Generate_student_report</span></span>(<span>student_info)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>@ Author : Yuhao Ye</p>
+<p>param student_info:</p>
+<p>Description
+Generate student report</p>
+<p>return:</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def Generate_student_report(student_info):
+    &#34;&#34;&#34;
+    @ Author : Yuhao Ye\n
+    param student_info:\n
+    Description  Generate student report\n
+    return:\n
+    &#34;&#34;&#34;
+    while True:
+       UIN = input(&#34;Please enter the uin number: &#34;)
+       if len(UIN) != 10:
+          print(&#39;The UIN must be ten digits !&#39;)
+       elif  not UIN.isnumeric():
+          print(&#39;UIN must be all digits !&#39;)
+       elif UIN not in student_info:
+          print(&#39;The UIN you enter does not exits! &#39;)
+       else:
+           break
+
+    Scores_percentage, studetn_final_grades= grade_calculation(student_info,UIN)
+
+    if Scores_percentage &gt;= 90:
+        grade_lettter = &#39;A&#39;
+    elif Scores_percentage &gt;= 80 and Scores_percentage &lt; 90:
+        grade_lettter = &#39;B&#39;
+    elif Scores_percentage &gt;= 70 and Scores_percentage&lt; 80:
+        grade_lettter = &#34;C&#34;
+    elif Scores_percentage &gt;= 60 and Scores_percentage &lt; 70:
+        grade_lettter = &#34;D&#34;
+    else:
+        grade_lettter = &#34;F&#34;
+
+    &#34;&#34;&#34;Write the result into the UIN.txt&#34;&#34;&#34;
+    File_name = UIN+&#39;.txt&#39;
+    with open(File_name,&#39;w&#39;) as write:
+        write.write(f&#39;Exams mean: {round(studetn_final_grades[&#34;Exams_mean&#34;],2)}\n&#39;)
+        write.write(f&#39;Labs mean: {round(studetn_final_grades[&#34;Labs_mean&#34;],2)}\n&#39;)
+        write.write(f&#39;Quizzes mean: {round(studetn_final_grades[&#34;Quizzes_mean&#34;],2)}\n&#39;)
+        write.write(f&#39;Reading activities mean: {round(studetn_final_grades[&#34;Reading_mean&#34;],2)}\n&#39;)
+        write.write(f&#39;Score: {round(Scores_percentage,2)}%\n&#39;)
+        write.write(f&#39;Letter grad: {grade_lettter}\n&#39;)
+
+    print(&#39;The student report has been created successfully , you will see it after quiting &#39;)
+    print()</code></pre>
+</details>
+</dd>
+<dt id="drive_final.display"><code class="name flex">
+<span>def <span class="ident">display</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Description : Display the Main Menu</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def display():
+    &#34;&#34;&#34;
+    Description : Display the Main Menu\n
+    &#34;&#34;&#34;
+    print(&#39;*******************Main Menu*****************&#39;)
+    print(&#39;1. Read CSV file of grades&#39;)
+    print(&#39;2. Generate student report files&#39;)
+    print(&#39;3. Generate student report charts&#39;)
+    print(&#39;4. Generate class report file&#39;)
+    print(&#39;5. Generate class report charts&#39;)
+    print(&#39;6. Quit&#39;)
+    print(&#39;************************************************&#39;)</code></pre>
+</details>
+</dd>
+<dt id="drive_final.generate_class_chart"><code class="name flex">
+<span>def <span class="ident">generate_class_chart</span></span>(<span>info)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>@Author : QuanLin Yu</p>
+<p>param info: an ordered dictionary</p>
+<p>description: This function count weighted grade for every student and plot pie chart and histogram chart based on it</p>
+<p>return: None</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def generate_class_chart(info):
+    &#39;&#39;&#39;
+    @Author : QuanLin Yu\n
+    param info: an ordered dictionary\n
+    description: This function count weighted grade for every student and plot pie chart and histogram chart based on it\n
+    return: None
+    &#39;&#39;&#39;
+    try:
+        os.mkdir(&#39;class_charts&#39;)
+    except FileExistsError:
+        pass
+    data=[0.15*float(info[i][&#39;exam 1&#39;])+0.15*float(info[i][&#39;exam 2&#39;])+0.15*float(info[i][&#39;exam 3&#39;])+0.25*np.mean(np.array([info[i][&#39;lab 1&#39;],info[i][&#39;lab 2&#39;],info[i][&#39;lab 3&#39;],info[i][&#39;lab 4&#39;],info[i][&#39;lab 5&#39;],info[i][&#39;lab 6&#39;]],dtype=np.float32))+0.1*np.mean(np.array([info[i][&#39;quiz 1&#39;],info[i][&#39;quiz 2&#39;],info[i][&#39;quiz 3&#39;],info[i][&#39;quiz 4&#39;],info[i][&#39;quiz 5&#39;],info[i][&#39;quiz 6&#39;]],dtype=np.float32))+0.1*np.mean(np.array([info[i][&#39;reading 1&#39;],info[i][&#39;reading 2&#39;],info[i][&#39;reading 3&#39;],info[i][&#39;reading 4&#39;],info[i][&#39;reading 5&#39;],info[i][&#39;reading 6&#39;]],dtype=np.float32))+0.1*float(info[i][&#39;project&#39;]) for i in info]
+    labels=[&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;D&#39;,&#39;F&#39;]
+    grade=dict.fromkeys(labels,0)
+    for i in data:
+        if 90&lt;=i&lt;=100:
+            grade[&#39;A&#39;]+=1
+        elif 80&lt;=i&lt;90:
+            grade[&#39;B&#39;]+=1
+        elif 70&lt;=i&lt;80:
+            grade[&#39;C&#39;]+=1
+        elif 60&lt;=i&lt;70:
+            grade[&#39;D&#39;]+=1
+        else:
+            grade[&#39;F&#39;]+=1
+    grade=[i[1] for i in sorted(grade.items(),key=lambda x:x[0])]
+    plt.pie(grade,labels=labels,autopct=&#39;%1.1f%%&#39;,shadow=False,startangle=150)
+    plt.title(&#34;class letter grades&#34;)
+    plt.savefig(&#34;class_charts//class letter grades(pie).png&#34;)
+    plt.clf()
+    p1 = plt.bar(range(len(labels)), height=grade, width=0.5, tick_label=labels)
+    for a, b in zip(range(len(labels)), grade):
+        plt.text(a, b + 0.05, &#39;%.0f&#39; % b, ha=&#39;center&#39;, va=&#39;bottom&#39;, fontsize=10)
+    plt.xlabel(&#34;Grades&#34;)
+    plt.ylabel(&#34;Count&#34;)
+    plt.title(&#34;class letter grades&#34;)
+    plt.savefig(&#34;class_charts//class letter grades(histogram).png&#34;)</code></pre>
+</details>
+</dd>
+<dt id="drive_final.generate_class_report"><code class="name flex">
+<span>def <span class="ident">generate_class_report</span></span>(<span>info)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>@Author : QuanLin Yu</p>
+<p>param info: an ordered dictionary</p>
+<p>description: This function count weighted grade for every student and calculate mean and others parameters based on it</p>
+<p>return: None</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def generate_class_report(info):
+    &#39;&#39;&#39;
+    @Author : QuanLin Yu\n
+    param info: an ordered dictionary\n
+    description: This function count weighted grade for every student and calculate mean and others parameters based on it\n
+    return: None\n
+    &#39;&#39;&#39;
+    data=[0.15*float(info[i][&#39;exam 1&#39;])+0.15*float(info[i][&#39;exam 2&#39;])+0.15*float(info[i][&#39;exam 3&#39;])+0.25*np.mean(np.array([info[i][&#39;lab 1&#39;],info[i][&#39;lab 2&#39;],info[i][&#39;lab 3&#39;],info[i][&#39;lab 4&#39;],info[i][&#39;lab 5&#39;],info[i][&#39;lab 6&#39;]],dtype=np.float32))+0.1*np.mean(np.array([info[i][&#39;quiz 1&#39;],info[i][&#39;quiz 2&#39;],info[i][&#39;quiz 3&#39;],info[i][&#39;quiz 4&#39;],info[i][&#39;quiz 5&#39;],info[i][&#39;quiz 6&#39;]],dtype=np.float32))+0.1*np.mean(np.array([info[i][&#39;reading 1&#39;],info[i][&#39;reading 2&#39;],info[i][&#39;reading 3&#39;],info[i][&#39;reading 4&#39;],info[i][&#39;reading 5&#39;],info[i][&#39;reading 6&#39;]],dtype=np.float32))+0.1*float(info[i][&#39;project&#39;]) for i in info]
+    f=open(&#39;report.txt&#39;,&#39;w+&#39;)
+    f.write(&#39;Number of students:{0}\n&#39;.format(len(info)))
+    f.write(&#39;Minimum score:{0}\n&#39;.format(round(min(data),1)))
+    f.write(&#39;Maximum score:{0}\n&#39;.format(round(max(data),1)))
+    f.write(&#39;Median score:{0}\n&#39;.format(round(np.median(data),1)))
+    f.write(&#39;Mean score:{0}\n&#39;.format(round(np.mean(data),1)))
+    f.write(&#39;Standard deviation:{0}\n&#39;.format(round(np.std(data),1)))
+    f.close()</code></pre>
+</details>
+</dd>
+<dt id="drive_final.generate_student_chart"><code class="name flex">
+<span>def <span class="ident">generate_student_chart</span></span>(<span>student_info)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>@Author : YuHao Ye</p>
+<p>param student_info:</p>
+<p>Description : Generate report charts for student.</p>
+<p>return:</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def generate_student_chart(student_info):
+    &#34;&#34;&#34;
+    @Author : YuHao Ye\n
+    param student_info:\n
+    Description : Generate report charts for student.\n
+    return:\n
+    &#34;&#34;&#34;
+    FIGURE1 = 1
+    FIGURE2 = 2
+    FIGURE3 = 3
+    FIGURE4 = 4
+    current_path = os.getcwd()
+    while True:
+        UIN_Number = input(&#34;Please enter the uin number: &#34;)
+        if len(UIN_Number ) != 10:
+            print(&#39;The UIN must be ten digits !&#39;)
+        elif not UIN_Number .isnumeric():
+            print(&#39;UIN must be all digits !&#39;)
+        elif UIN_Number  not in student_info:
+            print(&#39;The UIN you enter does not exits! &#39;)
+        else:
+            break
+
+    new_path = current_path+f&#39;\{UIN_Number}&#39;
+
+    if not os.path.exists(new_path):
+        os.mkdir(new_path)
+    os.chdir(new_path)
+
+    #bar charts for exam
+    student_grades = student_info.get(UIN_Number)
+    exam_grade = list()
+    for i in range(1, 4):
+        target = &#39;exam &#39; + str(i)
+        exam_grade.append(float(student_grades.get(target)))
+    drawing.figure(FIGURE1)
+    x_value = [1 , 2 , 3]
+    drawing.title(f&#39;Exam grade for {UIN_Number}&#39;,size = 20)
+    drawing.xlabel(&#34;Exam&#34;,size =&#39;15&#39; , color = &#39;red&#39;)
+    drawing.ylabel(&#34;Scores %&#34;,size = &#39;15&#39;, color = &#39;red&#39;)
+    drawing.yticks(range(0,100,10))
+    drawing.bar(x_value,exam_grade)
+    x_mark = 1
+    for grade in exam_grade:
+      drawing.text(x_mark-0.05,grade+0.5,grade,size = &#34;10&#34;)
+      x_mark+=1
+    drawing.savefig(&#34;exams_chart.png&#34;)
+
+
+#bar chart for lab
+    drawing.figure(FIGURE2)
+    lab_grade = list()
+    for i in range(1,7):
+        target = &#39;lab &#39; + str(i)
+        lab_grade.append(float(student_grades.get(target)))
+    x_value = [1,2,3,4,5,6]
+    drawing.title(f&#39;Lab grade for {UIN_Number}&#39;,size = 20)
+    drawing.xlabel(&#39;Lab&#39; , size = &#39;15&#39;,color = &#39;red&#39;)
+    drawing.ylabel(&#34;Scores %&#34;,size = &#39;15&#39;, color = &#39;red&#39;)
+    drawing.yticks(range(0, 120, 10))
+    drawing.bar(x_value, lab_grade)
+    x_mark =1
+    for grade in lab_grade:
+        drawing.text(x_mark - 0.07, grade + 0.5, grade, size=&#34;10&#34;)
+        x_mark += 1
+    drawing.savefig(&#34;lab_chars.png&#34;)
+
+# bar chart for quiz
+    drawing.figure(FIGURE3)
+    quiz_grade = list()
+    for i in range(1, 7):
+        target = &#39;quiz &#39; + str(i)
+        quiz_grade.append(float(student_grades.get(target)))
+    x_value = [1, 2, 3, 4, 5, 6]
+    drawing.title(f&#39;Quiz grade for {UIN_Number}&#39;, size=20)
+    drawing.xlabel(&#39;Quiz&#39;, size=&#39;15&#39;, color=&#39;red&#39;)
+    drawing.ylabel(&#34;Scores %&#34;, size=&#39;15&#39;, color=&#39;red&#39;)
+    drawing.yticks(range(0, 120, 10))
+    drawing.bar(x_value, quiz_grade)
+    x_mark = 1
+    for grade in quiz_grade:
+        drawing.text(x_mark - 0.2, grade + 0.5, grade, size=&#34;10&#34;)
+        x_mark += 1
+    drawing.savefig(&#34;quiz_chars.png&#34;)
+
+# bar chart for reading activities
+    drawing.figure(FIGURE4)
+    reading_grade = list()
+    for i in range(1, 7):
+        target = &#39;reading &#39; + str(i)
+        reading_grade.append(float(student_grades.get(target)))
+    x_value = [1, 2, 3, 4, 5, 6]
+    drawing.title(f&#39;Reading activities grade for {UIN_Number}&#39;, size=10)
+    drawing.xlabel(&#39;Reading activities&#39;, size=&#39;15&#39;, color=&#39;red&#39;)
+    drawing.ylabel(&#34;Scores %&#34;, size=&#39;15&#39;, color=&#39;red&#39;)
+    drawing.yticks(range(0, 120, 10))
+    drawing.bar(x_value, reading_grade)
+    x_mark = 1
+    for grade in reading_grade:
+        drawing.text(x_mark-0.2 , grade+0.5, grade, size=&#34;10&#34;)
+        x_mark += 1
+    drawing.savefig(&#34;reading_chars.png&#34;)
+    &#34;&#34;&#34;:returns back to the previous work directory &#34;&#34;&#34;
+    os.chdir(current_path)</code></pre>
+</details>
+</dd>
+<dt id="drive_final.grade_calculation"><code class="name flex">
+<span>def <span class="ident">grade_calculation</span></span>(<span>student_info, UIN)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>@author Yuhao Ye</p>
+<p>param student_info:</p>
+<p>param UIN:</p>
+<p>Description: calculate Exam mean , labs mean , quizzes mean , Reading mean , Score as percentage
+and Lettergrade</p>
+<p>return: student's final scores and grades</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def grade_calculation(student_info,UIN):
+    &#34;&#34;&#34;
+    @author Yuhao Ye\n
+    param student_info:\n
+    param UIN:\n
+    Description: calculate Exam mean , labs mean , quizzes mean , Reading mean , Score as percentage  and Lettergrade\n
+    return: student&#39;s final scores and grades\n
+    &#34;&#34;&#34;
+    student_final_grade = dict()
+
+    for uin, values in student_info.items():
+        if uin == UIN:
+            student_final_grade[&#39;Labs_mean&#39;]      = mean_calculation(&#39;lab&#39;, 6, values)
+            student_final_grade[&#39;Exams_mean&#39;]     = mean_calculation(&#39;exam&#39;, 3, values)
+            student_final_grade[&#39;Quizzes_mean&#39;]   = mean_calculation(&#39;quiz&#39;, 6, values)
+            student_final_grade[&#39;Reading_mean&#39;]   = mean_calculation(&#39;reading&#39;, 6, values)
+            student_final_grade[&#39;Project_grade&#39;]  = mean_calculation(&#39;project&#39;, 1, values)
+    Scores_percentage = student_final_grade[&#39;Labs_mean&#39;]  * 0.25 + student_final_grade[&#39;Exams_mean&#39;]* 0.45 + student_final_grade[&#39;Quizzes_mean&#39;]  * 0.1 +\
+                        student_final_grade[&#39;Reading_mean&#39;] * 0.1 + \
+                        student_final_grade[&#39;Project_grade&#39;] * 0.1
+    return Scores_percentage,student_final_grade</code></pre>
+</details>
+</dd>
+<dt id="drive_final.main"><code class="name flex">
+<span>def <span class="ident">main</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>@Author: QuanLin Yu</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def main():
+    &#34;&#34;&#34;
+    @Author: QuanLin Yu\n
+    &#34;&#34;&#34;
+    student_info = dict() # this dict instore the information
+    display()
+    while True :
+        try:
+            options = int(input(&#34;Please enter an option (between 1-6  (Don&#39;t forget to read csv file at first! )): &#34;))
+        except ValueError:
+            break
+        if options == 6 :
+            break
+        else:
+          if options == 1:
+              student_info = read_csv()
+          elif options == 2:
+              Generate_student_report(student_info)
+          elif options ==3 :
+              generate_student_chart(student_info)
+          elif options == 4:
+              generate_class_report(student_info)
+          elif options == 5 :
+             generate_class_chart(student_info)
+        display()</code></pre>
+</details>
+</dd>
+<dt id="drive_final.mean_calculation"><code class="name flex">
+<span>def <span class="ident">mean_calculation</span></span>(<span>object_type, amount, info_dict)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Author Yuhao Ye</p>
+<p>param object_type: type of grade (eg,Lab, quizz , exam ,project&hellip;)</p>
+<p>param amount: (eg, if there is 6 lab in total , the amount = 6)</p>
+<p>param info_dict:</p>
+<p>return: mean_value</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def mean_calculation(object_type, amount,info_dict):
+    &#34;&#34;&#34;
+    Author Yuhao Ye\n
+    param object_type: type of grade (eg,Lab, quizz , exam ,project...)\n
+    param amount: (eg, if there is 6 lab in total , the amount = 6)\n
+    param info_dict:\n
+    return: mean_value\n
+    &#34;&#34;&#34;
+    total_scores = 0
+    mean_value = 0
+    # since there is only one project, hence return project grade instantly
+    if object_type == &#34;project&#34;:
+       return  float(info_dict[&#39;project&#39;])
+
+    else:
+       for number in range(1, amount + 1 ):
+          type_name = object_type
+          type_name = type_name + &#34; &#34;  + str(number)
+          total_scores = total_scores + float(info_dict[type_name])
+       mean_value = total_scores / amount
+       return mean_value</code></pre>
+</details>
+</dd>
+<dt id="drive_final.read_csv"><code class="name flex">
+<span>def <span class="ident">read_csv</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>@ Author :Yuhao Ye</p>
+<p>Description: This function read the file which at specfic location</p>
+<p>return: a dictionary which store the scores of all students</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def read_csv():
+    &#34;&#34;&#34;
+    @ Author :Yuhao Ye\n
+    Description: This function read the file which at specfic location\n
+    return: a dictionary which store the scores of all students\n
+    &#34;&#34;&#34;
+    student_info = dict()
+    path = input(&#34;Enter the full path (absolute path ) of your csv file: &#34;)
+    try:
+        with open(path, &#39;r&#39;) as file:
+            csv_file = csv.DictReader(file)
+            for row in csv_file:
+                student_info[row[&#39;UIN&#39;]] = row
+        print(&#34;File reads successfully!&#34;)
+        print()
+        return student_info
+    except FileNotFoundError:
+        print(&#34;Sorry cannot find your file, please read again.&#34;)
+        print()</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="drive_final.Generate_student_report" href="#drive_final.Generate_student_report">Generate_student_report</a></code></li>
+<li><code><a title="drive_final.display" href="#drive_final.display">display</a></code></li>
+<li><code><a title="drive_final.generate_class_chart" href="#drive_final.generate_class_chart">generate_class_chart</a></code></li>
+<li><code><a title="drive_final.generate_class_report" href="#drive_final.generate_class_report">generate_class_report</a></code></li>
+<li><code><a title="drive_final.generate_student_chart" href="#drive_final.generate_student_chart">generate_student_chart</a></code></li>
+<li><code><a title="drive_final.grade_calculation" href="#drive_final.grade_calculation">grade_calculation</a></code></li>
+<li><code><a title="drive_final.main" href="#drive_final.main">main</a></code></li>
+<li><code><a title="drive_final.mean_calculation" href="#drive_final.mean_calculation">mean_calculation</a></code></li>
+<li><code><a title="drive_final.read_csv" href="#drive_final.read_csv">read_csv</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.8.4</a>.</p>
+</footer>
+</body>
+</html>

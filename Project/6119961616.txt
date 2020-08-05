@@ -1,0 +1,6 @@
+Exams mean: 90.5
+Labs mean: 91.92
+Quizzes mean: 87.75
+Reading activities mean: 75.45
+Score: 89.02%
+Letter grad: B

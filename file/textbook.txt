@@ -1,0 +1,3 @@
+The distance from earth to earth is 0
+The distance from earth to Mars is 100
+The distance from earth to Jupter is 30

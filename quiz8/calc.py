@@ -1,0 +1,13 @@
+a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+print()
+binary_a  = bin(a)
+binary_b = bin(b)
+
+print(f'{a} in binary: {binary_a}')
+print(f'{b} in binary: {binary_b}')
+print(f'(NOT {a}) in binary: {bin(~a)}')
+print(f'({a} AND {b}) in binary: {bin(a & b)}')
+print(f'({a} OR {b}) in binary: {bin(a|b)}' )
+print(f'({a} XOR {b}) shifted left 3 times in binary: {bin((a^b)<< 3 )}' )
+print(f'{a} OR {b} in binary (without prefix): {bin(a|b)[2::]}')
